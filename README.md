@@ -17,22 +17,28 @@ prerequisite:
 
 procedure:
 - create GO working directory:
-```mkdir ~/go
+```
+mkdir ~/go
 ```
 - set environment variable:
-```export GOPATH=/home/user/go
+```
+export GOPATH=/home/user/go
 ```
 - create path, for this source:
-```mkdir -p $GOPATH/src/github.com/ibrohimislam/tugas-2
+```
+mkdir -p $GOPATH/src/github.com/ibrohimislam/tugas-2
 ```
 - move to this directory
-```cd $GOPATH/src/github.com/ibrohimislam/tugas-2/bin
+```
+cd $GOPATH/src/github.com/ibrohimislam/tugas-2/bin
 ```
 - compile client
-```go build ../client/client.go
+```
+go build ../client/client.go
 ```
 - compile server
-```go build ../server/main.go
+```
+go build ../server/main.go
 ```
 
 ##How to Use
