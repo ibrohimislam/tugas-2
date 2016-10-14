@@ -1,0 +1,20 @@
+--- services/tugas/file_svc.go.old	2016-10-14 07:52:30.548910681 +0700
++++ services/tugas/file_svc.go	2016-10-14 07:52:34.233985079 +0700
+@@ -1299,7 +1299,7 @@
+ 			return fmt.Errorf("error writing list begin: %s")
+ 		}
+ 		for _, v := range p.Success {
+-			if err := oprot.WriteByte(byte(v)); err != nil {
++			if err := oprot.WriteByte(int8(v)); err != nil {
+ 				return fmt.Errorf("%T. (0) field write error: %s", p)
+ 			}
+ 		}
+@@ -1669,7 +1669,7 @@
+ 			return fmt.Errorf("error writing list begin: %s")
+ 		}
+ 		for _, v := range p.Content {
+-			if err := oprot.WriteByte(byte(v)); err != nil {
++			if err := oprot.WriteByte(int8(v)); err != nil {
+ 				return fmt.Errorf("%T. (0) field write error: %s", p)
+ 			}
+ 		}
